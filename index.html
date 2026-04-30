@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOXOS | Elite Strength Equipment</title>
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">LOXOS</div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="loxos logo.png" alt="LOXOS Logo" class="nav-logo">
+                </a>
+            </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -24,7 +28,28 @@
         <div class="hero-content">
             <h1>FORGE YOUR STRENGTH</h1>
             <p>Premium lifting gear designed for the modern athlete.</p>
-            <a href="#shop" class="btn">View Collection</a>
+            <a href="shop.html" class="btn hero-btn">View Collection</a>
+        </div>
+    </section>
+
+    <section id="calculator" class="calc-container">
+        <h2>1RM STRENGTH ESTIMATOR</h2>
+        <p>Calculate your theoretical max based on your heavy sets.</p>
+        
+        <div class="unit-toggle">
+            <button id="btnKg" class="active" onclick="setUnit('kg')">KG</button>
+            <button id="btnLb" onclick="setUnit('lb')">LB</button>
+        </div>
+
+        <div class="input-group">
+            <input type="number" id="liftWeight" placeholder="Weight">
+            <input type="number" id="liftReps" placeholder="Reps">
+        </div>
+
+        <button class="calc-main-btn" onclick="calculateStrength()">CALCULATE MAX</button>
+        
+        <div id="calcResult" class="result-display">
+            ESTIMATED 1RM: --
         </div>
     </section>
 
@@ -32,16 +57,19 @@
         <h2>Featured Gear</h2>
         <div class="product-grid">
             <div class="product-card">
+                <img src="loxos straps.PNG" alt="LOXOS Straps" class="product-image">
                 <h3>Figure-8 Straps</h3>
                 <p>Maximum grip for your heaviest pulls.</p>
+                <p class="price">P350.00</p>
+                <a href="shop.html" class="btn">View Shop</a>
             </div>
-            </div>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2026 LOXOS Gym Brand. All rights reserved.</p>
-
-
     </footer>
-    <script src="script.js"></script>
-    </body>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
