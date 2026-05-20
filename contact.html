@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | LOXØS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="margin: 0; background-color: #111111; color: #ffffff; min-height: 100vh; display: flex; flex-direction: column;">
+
+    <!-- 1. Identical Navigation Bar Header (Perfect Visual Continuity) -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background-color: #000000; color: #ffffff; border-bottom: 1px solid #222;">
+        
+        <!-- Top Left Corner: Image Link to Home Page -->
+        <a href="index.html" style="display: inline-block;">
+            <img src="imgs/loxos logo.png" alt="LOXOS Logo" style="height: 45px; width: auto; display: block;">
+        </a>
+        
+        <!-- Top Right Corner: Navigation Menu (Contact Highlighted) -->
+        <nav style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Home</a>
+            <a href="shop.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Shop</a>
+            <a href="about.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">About</a>
+            <a href="contact.html" style="color: #ffffff !important; text-decoration: none; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #ffffff;">Contact</a>
+            <a href="feedback.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Feedback</a>
+        </nav>
+    </header>
+
+    <!-- 2. Main Layout Container pointing to your index background asset -->
+    <main class="contact-container" style="flex: 1; padding: 60px 20px; background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('imgs/background.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        
+        <!-- Header Text Block -->
+        <header class="contact-header" style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-size: 3rem; font-weight: 900; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 1px;">Connect With Us</h1>
+            <p class="subtitle" style="color: #888888; font-style: italic; font-size: 1.2rem;">Choose an interactive pathway below to initiate communication.</p>
+        </header>
+
+        <!-- Interactive Pathways Grid (Semantic Section Container) -->
+        <section style="max-width: 650px; width: 100%; margin: 0 auto 40px auto; display: flex; flex-direction: column; gap: 15px;">
+            
+            <!-- Interactive Card 1: Business & Investment -->
+            <details style="background-color: rgba(0, 0, 0, 0.8); border: 1px solid #333333; border-left: 4px solid #ffffff; border-radius: 4px; padding: 15px; cursor: pointer;">
+                <summary style="font-size: 1.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #ffffff; outline: none; list-style-position: inside;">
+                    Business & Investments
+                </summary>
+                <p style="line-height: 1.6; color: #cccccc; margin-top: 15px; font-size: 1rem; cursor: default;">
+                    For corporate proposals, pitch inquiries, or investment documentation access, contact our operational desk directly at:<br>
+                    <strong style="color: #fff; display: block; margin-top: 5px;">📧 operations@loxosbrand.com</strong>
+                </p>
+            </details>
+
+            <!-- Interactive Card 2: Support & Logistics -->
+            <details style="background-color: rgba(0, 0, 0, 0.8); border: 1px solid #333333; border-left: 4px solid #ffffff; border-radius: 4px; padding: 15px; cursor: pointer;">
+                <summary style="font-size: 1.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #ffffff; outline: none; list-style-position: inside;">
+                    Gear Support & Pilot Orders
+                </summary>
+                <p style="line-height: 1.6; color: #cccccc; margin-top: 15px; font-size: 1rem; cursor: default;">
+                    Tracking a pre-order batch or requesting hardware specs for lifting straps? Reach out directly via our logistical channel:<br>
+                    <strong style="color: #fff; display: block; margin-top: 5px;">📧 support@loxosbrand.com</strong>
+                </p>
+            </details>
+
+        </section>
+
+        <!-- Direct Form Option Header -->
+        <h2 style="font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 25px; text-align: center;">Or Send a Direct Message</h2>
+
+        <!-- Contact Form Block (Perfectly Centered with margin: 0 auto) -->
+        <form action="#" method="POST" style="max-width: 650px; width: 100%; margin: 0 auto; background-color: rgba(0, 0, 0, 0.8); padding: 40px; border-radius: 4px; border: 1px solid #333333; border-top: 4px solid #ffffff; backdrop-filter: blur(5px); box-shadow: 0 4px 15px rgba(0,0,0,0.5); box-sizing: border-box;">
+            
+            <p style="margin: 0 0 20px 0; display: flex; flex-direction: column; gap: 8px;">
+                <label for="name" style="color: #ffffff; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name" style="width: 100%; padding: 12px; background-color: #222222; border: 1px solid #444444; color: #ffffff; border-radius: 4px; font-size: 1rem; box-sizing: border-box;">
+            </p>
+
+            <p style="margin: 0 0 20px 0; display: flex; flex-direction: column; gap: 8px;">
+                <label for="email" style="color: #ffffff; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="name@domain.com" style="width: 100%; padding: 12px; background-color: #222222; border: 1px solid #444444; color: #ffffff; border-radius: 4px; font-size: 1rem; box-sizing: border-box;">
+            </p>
+
+            <p style="margin: 0 0 25px 0; display: flex; flex-direction: column; gap: 8px;">
+                <label for="message" style="color: #ffffff; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Type your message here..." style="width: 100%; padding: 12px; background-color: #222222; border: 1px solid #444444; color: #ffffff; border-radius: 4px; font-family: inherit; font-size: 1rem; resize: vertical; box-sizing: border-box;"></textarea>
+            </p>
+
+            <p style="margin: 0;">
+                <button type="submit" style="width: 100%; padding: 15px; background-color: #ffffff; color: #000000; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">
+                    Dispatch Message
+                </button>
+            </p>
+
+        </form>
+
+        <!-- 3. Identical Footer Block Alignment -->
+        <footer class="contact-footer" style="text-align: center; margin-top: 60px; padding: 25px 0; border-top: 1px solid #222222; width: 100%;">
+            <p style="color: #555555; font-size: 0.9rem; margin: 0;">&copy; 2026 LOXØS Gym Brand. All rights reserved.</p>
+        </footer>
+        
+    </main>
+</body>
+</html>
