@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | LOXØS</title>
-    <!-- Linked to styles.css to ensure layout continuity -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="margin: 0; background-color: #111111; color: #ffffff; min-height: 100vh; display: flex; flex-direction: column;">
@@ -17,62 +16,57 @@
             <img src="imgs/loxos logo.png" alt="LOXOS Logo" style="height: 45px; width: auto; display: block;">
         </a>
         
-        <!-- Top Right Corner: Navigation Menu forced to White text -->
+        <!-- Top Right Corner: Navigation Menu (All Crisp White) -->
         <nav style="display: flex; gap: 30px; align-items: center;">
             <a href="index.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Home</a>
             <a href="shop.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Shop</a>
-            <a href="about.html" style="color: #ffc107 !important; text-decoration: none; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">About</a>
+            <a href="about.html" style="color: #ffffff !important; text-decoration: none; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #ffffff;">About</a>
             <a href="contact.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Contact</a>
             <a href="feedback.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Feedback</a>
         </nav>
     </header>
 
-    <!-- 2. Main Layout Block with Background Image + Tint Overlay Applied Directly -->
-    <main class="about-container" style="flex: 1; padding: 60px 20px; background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('imgs/your-background-image.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; display: flex; flex-direction: column; justify-content: center;">
+    <!-- 2. Main Layout Block mapped directly to your repository imgs/ folder -->
+    <!-- NOTE: Swap 'about-bg.jpg' with your exact background file name inside your imgs/ folder -->
+    <main class="about-container" style="flex: 1; padding: 60px 20px; background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('imgs/about-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; display: flex; flex-direction: column; justify-content: center;">
         
-        <!-- Header Text Block Inside Main -->
         <header class="about-header" style="text-align: center; margin-bottom: 50px;">
             <h1 style="font-size: 3rem; font-weight: 900; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 1px;">About the Vision</h1>
-            <p class="subtitle" style="color: #bbb; font-style: italic; font-size: 1.2rem;">Strength, Discipline, and Identity.</p>
+            <p class="subtitle" style="color: #888888; font-style: italic; font-size: 1.2rem;">Strength, Discipline, and Identity.</p>
         </header>
 
-        <!-- Content Layout Section -->
         <section class="about-content" style="max-width: 800px; margin: 0 auto; width: 100%;">
             
-            <!-- Bio Manifesto Block -->
-            <article class="bio-section" style="margin-bottom: 40px; background-color: rgba(0, 0, 0, 0.4); padding: 30px; border-radius: 4px; backdrop-filter: blur(5px);">
-                <h2 style="font-size: 1.8rem; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid #ffc107; padding-bottom: 5px; display: inline-block;">The Story</h2>
-                <p style="line-height: 1.8; font-size: 1.1rem; margin-bottom: 15px; color: #f0f0f0;">
+            <article class="bio-section" style="margin-bottom: 40px; background-color: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 4px; border: 1px solid #333333; backdrop-filter: blur(5px);">
+                <h2 style="font-size: 1.8rem; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid #ffffff; padding-bottom: 5px; display: inline-block;">The Story</h2>
+                <p style="line-height: 1.8; font-size: 1.1rem; margin-bottom: 15px; color: #e0e0e0;">
                     It started with a simple goal: to create high-performance gear that doesn't just 
                     serve a function, but represents a mindset. Whether it's perfecting a 170kg 
                     deadlift or engineering the perfect pair of lifting straps, the focus is always 
                     on the "builder mindset."
                 </p>
-                <p style="line-height: 1.8; font-size: 1.1rem; color: #f0f0f0;">
+                <p style="line-height: 1.8; font-size: 1.1rem; color: #e0e0e0;">
                     I believe in practical application over theoretical compliance. This space is 
                     dedicated to those who value active presence, emotional intelligence, and the 
                     unrelenting drive to improve—one rep or one line of code at a time.
                 </p>
             </article>
 
-            <!-- Milestones Bullet List Block -->
-            <section class="milestones" style="background-color: rgba(17, 17, 17, 0.85); padding: 30px; border-radius: 4px; border-left: 4px solid #ffc107; backdrop-filter: blur(5px);">
-                <h3 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 0.5px; color: #ffc107;">Core Principles</h3>
+            <section class="milestones" style="background-color: rgba(0, 0, 0, 0.8); padding: 30px; border-radius: 4px; border-left: 4px solid #ffffff; border-top: 1px solid #333333; border-right: 1px solid #333333; border-bottom: 1px solid #333333; backdrop-filter: blur(5px);">
+                <h3 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 0.5px; color: #ffffff;">Core Principles</h3>
                 <ul style="list-style-type: square; padding-left: 20px; line-height: 2;">
-                    <li style="font-size: 1.05rem; margin-bottom: 10px; color: #f0f0f0;"><strong style="text-transform: uppercase; color: #fff;">Stoic Discipline:</strong> Embracing the challenge, not just the result.</li>
-                    <li style="font-size: 1.05rem; margin-bottom: 10px; color: #f0f0f0;"><strong style="text-transform: uppercase; color: #fff;">Practical Innovation:</strong> Building tools that solve real-world problems.</li>
-                    <li style="font-size: 1.05rem; color: #f0f0f0;"><strong style="text-transform: uppercase; color: #fff;">National Pride:</strong> Drawing inspiration from local roots to create global standards.</li>
+                    <li style="font-size: 1.05rem; margin-bottom: 10px; color: #e0e0e0;"><strong style="text-transform: uppercase; color: #ffffff;">Stoic Discipline:</strong> Embracing the challenge, not just the result.</li>
+                    <li style="font-size: 1.05rem; margin-bottom: 10px; color: #e0e0e0;"><strong style="text-transform: uppercase; color: #ffffff;">Practical Innovation:</strong> Building tools that solve real-world problems.</li>
+                    <li style="font-size: 1.05rem; color: #e0e0e0;"><strong style="text-transform: uppercase; color: #ffffff;">National Pride:</strong> Drawing inspiration from local roots to create global standards.</li>
                 </ul>
             </section>
             
         </section>
 
-        <!-- 3. Footer Block Alignment -->
-        <footer class="about-footer" style="text-align: center; margin-top: 60px; padding: 25px 0; border-top: 1px solid #222;">
-            <p style="color: #666; font-size: 0.9rem; margin: 0;">&copy; 2026 LOXØS Gym Brand. All rights reserved.</p>
+        <footer class="about-footer" style="text-align: center; margin-top: 60px; padding: 25px 0; border-top: 1px solid #222222;">
+            <p style="color: #555555; font-size: 0.9rem; margin: 0;">&copy; 2026 LOXØS Gym Brand. All rights reserved.</p>
         </footer>
         
     </main>
-
 </body>
 </html>
