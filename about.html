@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | EGO</title>
-    <!-- Link your existing CSS file here -->
-    <link rel="stylesheet" href="style.css">
-     <a href="index.html">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #000; color: #fff;">
+        <h1 style="font-size: 1.5rem; margin: 0; font-weight: bold;">
+            <a href="index.html" style="color: inherit; text-decoration: none;">EGO</a>
+        </h1>
+        <nav style="display: flex; gap: 20px;">
+            <a href="index.html" style="color: #fff; text-decoration: none;">Home</a>
+            <a href="shop.html" style="color: #fff; text-decoration: none;">Shop</a>
+            <a href="about.html" style="color: #ffc107; font-weight: bold; text-decoration: none;">About</a>
+            <a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a>
+            <a href="feedback.html" style="color: #fff; text-decoration: none;">Feedback</a>
+        </nav>
+    </header>
+
     <main class="about-container">
-        <header class="about-header">
-            <h1>About the Vision</h1>
-            <p class="subtitle">Strength, Discipline, and Identity.</p>
+        <header class="about-header" style="text-align: center; margin: 40px 0;">
+            <h1 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase;">About the Vision</h1>
+            <p class="subtitle" style="color: #666; font-style: italic;">Strength, Discipline, and Identity.</p>
         </header>
 
-        <section class="about-content">
+        <section class="about-content" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
             <article class="bio-section">
                 <h2>The Story</h2>
                 <p>
@@ -32,9 +43,9 @@
                 </p>
             </article>
 
-            <section class="milestones">
+            <section class="milestones" style="margin-top: 40px;">
                 <h3>Core Principles</h3>
-                <ul>
+                <ul style="list-style-type: square; padding-left: 20px; line-height: 1.8;">
                     <li><strong>Stoic Discipline:</strong> Embracing the challenge, not just the result.</li>
                     <li><strong>Practical Innovation:</strong> Building tools that solve real-world problems.</li>
                     <li><strong>National Pride:</strong> Drawing inspiration from local roots to create global standards.</li>
@@ -42,7 +53,7 @@
             </section>
         </section>
 
-        <footer class="about-footer">
+        <footer class="about-footer" style="text-align: center; margin-top: 60px; padding: 20px 0; border-top: 1px solid #eee;">
             <p>&copy; 2026 EGO Fitness Brand. All rights reserved.</p>
         </footer>
     </main>
