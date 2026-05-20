@@ -9,32 +9,24 @@
 </head>
 <body>
 
-    <!-- 1. Matching Top Navigation Bar Structure -->
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: #000; color: #fff;">
-        <!-- Logo Link Box Placement -->
-        <div class="logo-box">
-            <a href="index.html">
-                    <img src="imgs/loxos logo.png" alt="LOXOS Logo" class="nav-logo">
+ <!-- Pure Semantic Navigation Bar Header -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 25px 50px; background-color: #000; color: #fff;">
         
-        <!-- Navigation Menu Placement -->
-         <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-            </ul>
+        <!-- Standalone Brand Link (Locks LOXØS to the Left Corner and Links to Home) -->
+        <a href="index.html" style="color: #fff; text-decoration: none; font-size: 1.6rem; font-weight: 900; letter-spacing: 1px; text-transform: uppercase;">
+            LOXØS
+        </a>
+        
+        <!-- Navigation Element Container (Pushed Far Right) -->
+        <nav style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: #fff; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Home</a>
+            <a href="shop.html" style="color: #fff; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Shop</a>
+            <a href="about.html" style="color: #fff; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">About</a>
+            <a href="contact.html" style="color: #fff; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Contact</a>
+            <a href="feedback.html" style="color: #fff; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Feedback</a>
+        </nav>
+
     </header>
-
-    <!-- 2. Main Structural Layout Container -->
-    <main class="about-container" style="padding: 40px 20px;">
-        
-        <!-- Header Text Block -->
-        <header class="about-header" style="text-align: center; margin-bottom: 50px;">
-            <h1 style="font-size: 2.8rem; font-weight: 900; text-transform: uppercase; margin-bottom: 10px;">About the Vision</h1>
-            <p class="subtitle" style="color: #666; font-style: italic; font-size: 1.2rem;">Strength, Discipline, and Identity.</p>
-        </header>
-
         <!-- Content Split Layout -->
         <section class="about-content" style="max-width: 850px; margin: 0 auto;">
             
