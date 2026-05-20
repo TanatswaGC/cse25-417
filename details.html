@@ -20,20 +20,58 @@
             </p>
         </details>
 
-        <!-- INTERACTIVE COMPONENT 2: "Notify Me" Input Form Workflow Block Linked to Product ID -->
-        <form action="#" method="POST" style="margin: 0; padding: 0;">
+        <!-- BUTTON TO TRIGGER POP-UP: Links to the Section ID below -->
+        <p style="margin: 0;">
+            <a href="#notify-popup" style="display: block; width: 100%; padding: 14px; background-color: #ffffff; color: #000000; border: none; border-radius: 4px; font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; text-decoration: none; box-sizing: border-box;">
+                Notify Me
+            </a>
+        </p>
+
+    </section>
+
+    <!-- INTERACTIVE COMPONENT 2: Pure Semantic Pop-Up Window Overlay (Zero Divs / Zero JS) -->
+    <!-- You can place this CSS block in your styles.css file instead if you want to keep the HTML clean! -->
+    <style>
+        #notify-popup {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        /* The CSS Target rule triggers the pop-up display when the anchor link is clicked */
+        #notify-popup:target {
+            display: flex;
+        }
+    </style>
+
+    <section id="notify-popup">
+        <!-- Main Form Body acting as the modal popup window panel -->
+        <form action="#" method="POST" style="max-width: 450px; width: 90%; background-color: #111111; border: 1px solid #333333; border-top: 4px solid #ffffff; padding: 40px; border-radius: 4px; position: relative; box-sizing: border-box; box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
             
-            <!-- HIDDEN INPUT METADATA: Links the submission to this exact product inventory track -->
+            <!-- Close Modal Anchor Button (Top Right Corner) -->
+            <a href="#" style="position: absolute; top: 15px; right: 20px; color: #888888; text-decoration: none; font-size: 1.5rem; font-weight: bold; line-height: 1;">&times;</a>
+
+            <header style="text-align: center; margin-bottom: 25px;">
+                <h3 style="font-size: 1.4rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: #ffffff; margin: 0 0 10px 0;">Stock Alert Drop</h3>
+                <p style="color: #888888; font-size: 0.9rem; margin: 0; font-style: italic;">Get notified immediately when LOXØS V1 Straps are restocked.</p>
+            </header>
+
+            <!-- HIDDEN METADATA: Binds the alert payload directly to the item profile -->
             <input type="hidden" name="product_item" value="Lifting Straps V1">
 
-            <p style="margin: 0; display: flex; flex-direction: column; gap: 10px;">
-                <label for="notify-email" style="display: none;">Email Address</label>
-                <input type="email" id="notify-email" name="email" required placeholder="Enter email for stock drop alerts" style="width: 100%; padding: 12px; background-color: #111111; border: 1px solid #333333; color: #ffffff; border-radius: 4px; font-size: 0.9rem; box-sizing: border-box; text-align: center;">
-                
+            <p style="margin: 0 0 20px 0; display: flex; flex-direction: column; gap: 8px; text-align: left;">
+                <label for="popup-email" style="color: #ffffff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Your Email Address</label>
+                <input type="email" id="popup-email" name="email" required placeholder="name@domain.com" style="width: 100%; padding: 12px; background-color: #222222; border: 1px solid #444444; color: #ffffff; border-radius: 4px; font-size: 1rem; box-sizing: border-box;">
+            </p>
+
+            <p style="margin: 0;">
                 <button type="submit" style="width: 100%; padding: 14px; background-color: #ffffff; color: #000000; border: none; border-radius: 4px; font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer;">
-                    Notify Me
+                    Secure Spot
                 </button>
             </p>
         </form>
-
     </section>
