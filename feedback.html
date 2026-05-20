@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback | LOXØS</title>
-    <!-- Linked to styles.css to ensure layout continuity -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="margin: 0; background-color: #111111; color: #ffffff; min-height: 100vh; display: flex; flex-direction: column;">
 
-    <!-- 1. Identical Navigation Bar Header (Perfect Consistency) -->
+    <!-- 1. Identical Navigation Bar Header -->
     <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background-color: #000000; color: #ffffff; border-bottom: 1px solid #222;">
         
         <!-- Top Left Corner: Image Link to Home Page -->
@@ -17,54 +16,51 @@
             <img src="imgs/loxos logo.png" alt="LOXOS Logo" style="height: 45px; width: auto; display: block;">
         </a>
         
-        <!-- Top Right Corner: Navigation Menu (Feedback Highlighted) -->
+        <!-- Top Right Corner: Navigation Menu (All Crisp White) -->
         <nav style="display: flex; gap: 30px; align-items: center;">
             <a href="index.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Home</a>
             <a href="shop.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Shop</a>
             <a href="about.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">About</a>
             <a href="contact.html" style="color: #ffffff !important; text-decoration: none; font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Contact</a>
-            <a href="feedback.html" style="color: #ffc107 !important; text-decoration: none; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Feedback</a>
+            <a href="feedback.html" style="color: #ffffff !important; text-decoration: none; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #ffffff;">Feedback</a>
         </nav>
     </header>
 
-    <!-- 2. Main Layout Container with Shared Background Properties -->
-    <main class="about-container" style="flex: 1; padding: 60px 20px; background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('imgs/your-background-image.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <!-- 2. Main Layout Container mapped directly to your repository imgs/ folder -->
+    <!-- NOTE: Swap 'feedback-bg.jpg' with your exact background file name inside your imgs/ folder -->
+    <main class="about-container" style="flex: 1; padding: 60px 20px; background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('imgs/feedback-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         
-        <!-- Header Text Block Inside Main -->
         <header class="about-header" style="text-align: center; margin-bottom: 40px;">
             <h1 style="font-size: 3rem; font-weight: 900; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 1px;">Leave Feedback</h1>
-            <p class="subtitle" style="color: #bbb; font-style: italic; font-size: 1.2rem;">Help us refine our elite standards.</p>
+            <p class="subtitle" style="color: #888888; font-style: italic; font-size: 1.2rem;">Help us refine our elite standards.</p>
         </header>
 
-        <!-- Form Card Container (Semantic HTML Form Element) -->
-        <form action="#" method="POST" style="max-width: 600px; width: 100%; background-color: rgba(17, 17, 17, 0.85); padding: 40px; border-radius: 4px; border-left: 4px solid #ffc107; backdrop-filter: blur(5px); box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+        <!-- Form Card Container (Monochrome Steel Style Layout) -->
+        <form action="#" method="POST" style="max-width: 600px; width: 100%; background-color: rgba(0, 0, 0, 0.8); padding: 40px; border-radius: 4px; border-left: 4px solid #ffffff; border-top: 1px solid #333333; border-right: 1px solid #333333; border-bottom: 1px solid #333333; backdrop-filter: blur(5px); box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
             
-            <!-- Star Rating Section (Using Fieldset instead of Divs) -->
             <fieldset style="border: none; padding: 0; margin: 0 0 30px 0; text-align: center;">
-                <legend style="color: #ffc107; font-size: 1.2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px; width: 100%;">
+                <legend style="color: #ffffff; font-size: 1.2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px; width: 100%;">
                     How would you rate your experience?
                 </legend>
                 
-                <!-- Flex container wrapper for alignment -->
                 <p class="star-rating" style="display: flex; gap: 10px; justify-content: center; font-size: 1.8rem; margin: 0;">
                     <input type="radio" id="star5" name="rating" value="5" style="display: none;" />
-                    <label for="star5" title="5 stars" style="cursor: pointer; color: #ffc107;">&#9733;</label>
+                    <label for="star5" title="5 stars" style="cursor: pointer; color: #ffffff;">&#9733;</label>
                     
                     <input type="radio" id="star4" name="rating" value="4" style="display: none;" />
-                    <label for="star4" title="4 stars" style="cursor: pointer; color: #ffc107;">&#9733;</label>
+                    <label for="star4" title="4 stars" style="cursor: pointer; color: #ffffff;">&#9733;</label>
                     
                     <input type="radio" id="star3" name="rating" value="3" style="display: none;" />
-                    <label for="star3" title="3 stars" style="cursor: pointer; color: #ffc107;">&#9733;</label>
+                    <label for="star3" title="3 stars" style="cursor: pointer; color: #ffffff;">&#9733;</label>
                     
                     <input type="radio" id="star2" name="rating" value="2" style="display: none;" />
-                    <label for="star2" title="2 stars" style="cursor: pointer; color: #ffc107;">&#9733;</label>
+                    <label for="star2" title="2 stars" style="cursor: pointer; color: #ffffff;">&#9733;</label>
                     
                     <input type="radio" id="star1" name="rating" value="1" style="display: none;" />
-                    <label for="star1" title="1 star" style="cursor: pointer; color: #ffc107;">&#9733;</label>
+                    <label for="star1" title="1 star" style="cursor: pointer; color: #ffffff;">&#9733;</label>
                 </p>
             </fieldset>
 
-            <!-- Written Comments Section -->
             <p style="margin: 0 0 30px 0; display: flex; flex-direction: column; gap: 10px;">
                 <label for="comments" style="color: #ffffff; font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
                     Additional Comments
@@ -72,21 +68,18 @@
                 <textarea id="comments" name="comments" rows="5" placeholder="Tell us about your gear requirements, training blocks, or site suggestions..." style="width: 100%; padding: 15px; background-color: #222222; border: 1px solid #444444; color: #ffffff; border-radius: 4px; font-family: inherit; font-size: 1rem; resize: vertical; box-sizing: border-box;"></textarea>
             </p>
 
-            <!-- Action Form Button Element -->
             <p style="margin: 0;">
-                <button type="submit" style="width: 100%; padding: 15px; background-color: #ffc107; color: #000000; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: background 0.2s ease;">
+                <button type="submit" style="width: 100%; padding: 15px; background-color: #ffffff; color: #000000; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">
                     Submit Feedback
                 </button>
             </p>
 
         </form>
 
-        <!-- 3. Identical Footer Block Alignment -->
-        <footer class="about-footer" style="text-align: center; margin-top: 60px; padding: 25px 0; border-top: 1px solid #222; width: 100%;">
-            <p style="color: #666; font-size: 0.9rem; margin: 0;">&copy; 2026 LOXØS Gym Brand. All rights reserved.</p>
+        <footer class="about-footer" style="text-align: center; margin-top: 60px; padding: 25px 0; border-top: 1px solid #222222; width: 100%;">
+            <p style="color: #555555; font-size: 0.9rem; margin: 0;">&copy; 2026 LOXØS Gym Brand. All rights reserved.</p>
         </footer>
         
     </main>
-
 </body>
 </html>
