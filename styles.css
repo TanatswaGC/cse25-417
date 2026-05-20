@@ -53,7 +53,7 @@ nav ul li a:hover {
 
 /* --- Hero Section --- */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('imgs/background.png');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -326,7 +326,7 @@ footer p {
 .products {
     /* Replace 'shop-bg.jpg' with your actual filename */
     background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), 
-                url('shopbackground.png'); 
+                url('imgs/shopbackground.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This creates a cool parallax scrolling effect */
