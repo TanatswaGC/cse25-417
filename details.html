@@ -5,32 +5,21 @@
         <img src="imgs/straps.png" alt="LOXØS Lifting Straps" style="width: 100%; height: auto; border-radius: 2px; margin-bottom: 20px;">
         
         <!-- Product Details Header Block -->
-        <header style="margin-bottom: 15px;">
+        <header style="margin-bottom: 25px;">
             <h2 style="font-size: 1.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 5px 0; color: #ffffff;">LOXØS V1 Straps</h2>
             <p style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin: 0;">P350.00</p>
         </header>
 
-        <!-- INTERACTIVE COMPONENT 1: Native "View Details" Expandable Workspace -->
-        <details style="margin-bottom: 20px; text-align: left;">
-            <summary style="width: 100%; padding: 12px; background-color: #222222; color: #ffffff; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border: 1px solid #444444; border-radius: 4px; cursor: pointer; text-align: center; list-style-position: inside; box-sizing: border-box; outline: none;">
-                View Details
-            </summary>
-            <p style="font-size: 0.95rem; line-height: 1.6; color: #cccccc; margin-top: 15px; padding: 15px; background-color: #111111; border-radius: 4px; border-left: 2px solid #ffffff;">
-                Engineered for maximum tensile resistance during heavy pulling movements. Features reinforced double-stitching layout and heavy-duty canvas density to lock your grip onto the bar seamlessly for deadlifts, rows, and heavy variations.
-            </p>
-        </details>
-
-        <!-- BUTTON TO TRIGGER POP-UP: Links to the Section ID below -->
+        <!-- FIXED LINK: Clicking this now completely triggers the pure CSS pop-up view -->
         <p style="margin: 0;">
             <a href="#notify-popup" style="display: block; width: 100%; padding: 14px; background-color: #ffffff; color: #000000; border: none; border-radius: 4px; font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; text-decoration: none; box-sizing: border-box;">
-                Notify Me
+                View Details
             </a>
         </p>
 
     </section>
 
-    <!-- INTERACTIVE COMPONENT 2: Pure Semantic Pop-Up Window Overlay (Zero Divs / Zero JS) -->
-    <!-- You can place this CSS block in your styles.css file instead if you want to keep the HTML clean! -->
+    <!-- INTERACTIVE COMPONENT: Pure Semantic Pop-Up Window Overlay (Zero Divs / Zero JS) -->
     <style>
         #notify-popup {
             display: none;
@@ -42,7 +31,7 @@
             justify-content: center;
             align-items: center;
         }
-        /* The CSS Target rule triggers the pop-up display when the anchor link is clicked */
+        /* Activates the modal panel display via the URL hash match rule */
         #notify-popup:target {
             display: flex;
         }
@@ -55,22 +44,32 @@
             <!-- Close Modal Anchor Button (Top Right Corner) -->
             <a href="#" style="position: absolute; top: 15px; right: 20px; color: #888888; text-decoration: none; font-size: 1.5rem; font-weight: bold; line-height: 1;">&times;</a>
 
-            <header style="text-align: center; margin-bottom: 25px;">
-                <h3 style="font-size: 1.4rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: #ffffff; margin: 0 0 10px 0;">Stock Alert Drop</h3>
-                <p style="color: #888888; font-size: 0.9rem; margin: 0; font-style: italic;">Get notified immediately when LOXØS V1 Straps are restocked.</p>
+            <header style="text-align: center; margin-bottom: 20px;">
+                <h3 style="font-size: 1.4rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: #ffffff; margin: 0 0 5px 0;">LOXØS V1 Straps</h3>
+                <p style="color: #ffffff; font-size: 1.2rem; font-weight: 700; margin: 0 0 15px 0;">P350.00</p>
+                
+                <!-- Product Specifications Paragraph -->
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #cccccc; text-align: left; padding: 15px; background-color: #1b1b1b; border-radius: 4px; border-left: 2px solid #ffffff; margin: 0;">
+                    Engineered for maximum tensile resistance during heavy pulling movements. Features reinforced double-stitching layout and heavy-duty canvas density to lock your grip onto the bar seamlessly for deadlifts, rows, and heavy variations.
+                </p>
             </header>
 
-            <!-- HIDDEN METADATA: Binds the alert payload directly to the item profile -->
+            <!-- HIDDEN METADATA: Tracks item submission -->
             <input type="hidden" name="product_item" value="Lifting Straps V1">
 
-            <p style="margin: 0 0 20px 0; display: flex; flex-direction: column; gap: 8px; text-align: left;">
-                <label for="popup-email" style="color: #ffffff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Your Email Address</label>
-                <input type="email" id="popup-email" name="email" required placeholder="name@domain.com" style="width: 100%; padding: 12px; background-color: #222222; border: 1px solid #444444; color: #ffffff; border-radius: 4px; font-size: 1rem; box-sizing: border-box;">
-            </p>
+            <!-- Notification Signup Segment -->
+            <fieldset style="border: none; padding: 0; margin: 20px 0 25px 0; text-align: left;">
+                <legend style="color: #888888; font-size: 0.85rem; font-style: italic; margin-bottom: 15px;">Out of stock? Drop your email below to secure a spot for the next release.</legend>
+                
+                <p style="margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                    <label for="popup-email" style="color: #ffffff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Your Email Address</label>
+                    <input type="email" id="popup-email" name="email" required placeholder="name@domain.com" style="width: 100%; padding: 12px; background-color: #222222; border: 1px solid #444444; color: #ffffff; border-radius: 4px; font-size: 1rem; box-sizing: border-box; outline: none;">
+                </p>
+            </fieldset>
 
             <p style="margin: 0;">
                 <button type="submit" style="width: 100%; padding: 14px; background-color: #ffffff; color: #000000; border: none; border-radius: 4px; font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer;">
-                    Secure Spot
+                    Join Waitlist
                 </button>
             </p>
         </form>
